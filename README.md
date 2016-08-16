@@ -1,6 +1,6 @@
 #ga-code
 
-**Simple code block formatting**
+**Simple code block formatting. [Demo page](demo/index.html)**
 
 ##Installation
 
@@ -57,6 +57,12 @@ Wrap a *pre* element around a *code* element as you would do normally; To define
 The result should look like this:
 
 ![Screenshot of HTML example above](screenshot.png)
+
+##Changelog
+
+####v1.1.0
+- Better font support with LESS variables
+- Added Demo page
 
 ##Develop with Gulp
 
