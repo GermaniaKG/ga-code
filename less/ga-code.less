@@ -1,0 +1,50 @@
+//=============================
+// This file is part of ga-code
+//=============================
+
+
+//== Redefine these variables
+@ga-code-border-radius: 4px;
+@ga-code-color:         #555;
+@ga-code-background:    #eee;
+
+
+//== Here we go
+pre {
+	padding:       0.75rem 1rem;
+	background:    @ga-code-background;
+	border-radius: @ga-code-border-radius;
+	color:         @ga-code-color;
+	font-size:     0.8em;
+	line-height:   1.4em;
+	overflow:      scroll;
+}
+
+[data-code] {
+	position: relative;
+	padding-top: 2.5em;
+
+	&:before {
+		content:   attr(code);
+
+		display:   block;
+		width:     100%;
+
+		padding:   0.25rem 1rem;
+		position:  absolute;
+		top:       0px;
+		left:      0px;
+		border-top-left-radius:  @ga-code-border-radius;
+		border-top-right-radius: @ga-code-border-radius;
+		background-color:        darken(@ga-code-background, 5%);
+		color:                   @ga-code-color;
+		text-transform:          uppercase;
+	}
+}
+
+[data-code][data-code-title] {
+	&:before {
+		text-transform: none;
+		content: attr(data-code-title);
+	}
+}

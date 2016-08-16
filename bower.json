@@ -1,0 +1,21 @@
+{
+  "name": "ga-code",
+  "description": "Simple code block formatting",
+	"main": [
+    "css/ga-code.css",
+    "less/ga-code.less"
+  ],
+  "authors": [
+    "Carsten Witt",
+    "Germania KG <carstenwitt@germania-kg.de> (https://germania-kg.de)"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
