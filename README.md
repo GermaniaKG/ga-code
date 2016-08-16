@@ -52,4 +52,4 @@ Use [Git Flow](https://github.com/nvie/gitflow), always work in `develop` branch
 - Install development dependencies: `npm install`
 - Run `gulp watch`
 
-Builds are now in `dist/`
+Builds are now in `css/`
