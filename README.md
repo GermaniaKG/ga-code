@@ -2,14 +2,21 @@
 
 **Simple code block formatting**
 
+##Installation
 
+You may have to install [Bower](https://bower.io/) first, if not installed globally. Run in terminal:
+
+```bash
+$ npm install -D bower
+$ bower install ga-code
+```
 
 ##LESS and CSS
 
 Include the LESS file in your project main LESS and customize its variables to your needs. After compilation, the ga-code styles are part of your project CSS.
 
 ```less
-@import "path/to/less/ga-code.less";
+@import "bower_components/ga-code/less/ga-code.less";
 
 @ga-code-border-radius: 4px;
 @ga-code-color:         #555;
@@ -19,7 +26,7 @@ Include the LESS file in your project main LESS and customize its variables to y
 Alternatively, you can use the CSS directly:
 
 ```html
-<link rel="stylesheet" href="path/to/dist/ga-code.min.css">
+<link rel="stylesheet" href="bower_components/ga-code/css/ga-code.min.css">
 ```
 
 
