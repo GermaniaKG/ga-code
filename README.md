@@ -1,6 +1,6 @@
 #ga-code
 
-**Simple code block formatting**
+**Simple code block formatting. [Demo page](demo/index.html)**
 
 ##Installation
 
@@ -18,12 +18,25 @@ Include the LESS file in your project main LESS and customize its variables to y
 ```less
 @import "bower_components/ga-code/less/ga-code.less";
 
-@ga-code-border-radius: 4px;
-@ga-code-color:         #555;
-@ga-code-background:    #eee;
+@ga-code-border-radius:     3px;
+@ga-code-color:             #555;
+@ga-code-background:        #eee;
+@ga-code-font-family:       inherit;
+@ga-code-title-font-family: sans-serif;
+
+// Recommended:
+@ga-code-font-family: Hack, Menlo, Monaco, Consolas, "Courier New", monospace; 
 ```
 
-Alternatively, you can use the CSS directly:
+Bootstrap 3 users will also like:
+
+```less
+@ga-code-font-family:       @font-family-monospace; 
+@ga-code-title-font-family: @font-family-base;
+```
+
+
+Alternatively, you can use the CSS with the above defaults directly:
 
 ```html
 <link rel="stylesheet" href="bower_components/ga-code/css/ga-code.min.css">
@@ -44,6 +57,12 @@ Wrap a *pre* element around a *code* element as you would do normally; To define
 The result should look like this:
 
 ![Screenshot of HTML example above](screenshot.png)
+
+##Changelog
+
+####v1.1.0
+- Better font support with LESS variables
+- Added Demo page
 
 ##Develop with Gulp
 

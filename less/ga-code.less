@@ -4,9 +4,11 @@
 
 
 //== Redefine these variables
-@ga-code-border-radius: 4px;
-@ga-code-color:         #555;
-@ga-code-background:    #eee;
+@ga-code-border-radius:     3px;
+@ga-code-color:             #555;
+@ga-code-background:        #eee;
+@ga-code-font-family:       inherit;
+@ga-code-title-font-family: sans-serif;
 
 
 //== Here we go
@@ -16,7 +18,7 @@ pre {
 	border-radius: @ga-code-border-radius;
 	color:         @ga-code-color;
 	font-size:     0.8em;
-	line-height:   1.4em;
+	line-height:   1.5em;
 	overflow:      scroll;
 }
 
@@ -24,8 +26,12 @@ pre {
 	position: relative;
 	padding-top: 2.5em;
 
+	code {
+		font-family: @ga-code-font-family;
+	}
+
 	&:before {
-		content:   attr(code);
+		content:   attr(data-code);
 
 		display:   block;
 		width:     100%;
@@ -38,8 +44,11 @@ pre {
 		border-top-right-radius: @ga-code-border-radius;
 		background-color:        darken(@ga-code-background, 5%);
 		color:                   @ga-code-color;
-		text-transform:          uppercase;
+
+		font-family:     @ga-code-title-font-family;
+		text-transform:  uppercase;
 	}
+
 }
 
 [data-code][data-code-title] {
